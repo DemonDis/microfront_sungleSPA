@@ -15,4 +15,10 @@ registerApplication(
   () => location.pathname.startsWith('/')
 )
 
+registerApplication(
+  'svelte',
+  () => import('./svelte/svelte.app.js'),
+  () => location.pathname.startsWith('/')
+)
+
 start()
